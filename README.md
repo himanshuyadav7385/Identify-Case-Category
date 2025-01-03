@@ -4,8 +4,28 @@
 
 ### Executive summary
 
-**Project overview and goals:** The goal of this project is to build a model that assigns a category to a support case so that it can be assigned to the right support queue. The model will read the description and short description of the case and assign the right category. There are two levels of category (Parent and child) . level one categories are  "Incident" and "Service Requests" . There are 4 level two categories and each of these four are sub categories of level 1 . Sub categories of Incident are "Platform Issue" and "Integration issue" and sub categories of Service Requests are "User Help" and "User Access". We will be doing two level of binary classification and assign one of the four level two category to a case. We will be training and tuning four binary text classification models to accurately classify each case. Four approaches considered are  "Logistic Regression", "Support Vector", "Decision Tree", and "Naive Bayes". We will be using Accuracy, Precision, Recall and F1 score to identify the best model. Recall will be most critical as we do not want to miss any incidents as time is critical there. 
+**Project overview and goals:** 
+The goal of this project is to build a robust machine learning model to automate the categorization of support cases. This model will analyze the text fields, specifically the "Short Description" and "Description," of a case and assign it to the correct category for routing to the appropriate support queue. The categorization hierarchy consists of two levels:
 
-**Usage** I am leading around 4 supprt teams supporting different areas . Aim is to add this model as part of a chatbot that we are building where users can ask questions and talk about the issues they are facing and if a support ticket needs to be raised This chat bot can use this model and assign the case to right queue.  this helps in directing the issue to right team quickly. Going forward I also want to expand this to identify past tickets with similar issue and share it with the support engineer for quicker resolution. 
+**Level 1 (Parent Categories):** "Incident" and "Service Request."
+**Level 2 (Child Categories):** Subcategories under each parent category:
+    **Incident:** "Platform Issue" and "Integration Issue."
+    **Service Request:** "User Help" and "User Access."
+The model employs a two-step binary classification approach:
 
-**Usage** I will we using past two years case data . We will be using "Short Description" and "Description" of the cases for the text from which features will be extreacted . Each case is also assigned Parent and child categories under columns "Child New Tags" and "Parent Tags" . We will aslo use last two months data to test the performance of the model. This will act as unseen data. 
+1) **Parent Category Classification:** Determines whether a case belongs to "Incident" or "Service Request."
+2) **Child Category Classification:** Assigns one of the four child categories based on the parent category.
+   
+To achieve this, we evaluate and tune four text classification algorithms: **Logistic Regression, Support Vector Machine (SVM), Decision Tree,** and **Naive Bayes.** Key performance metrics include **Accuracy, Precision, Recall,** and **F1-Score,** with a particular emphasis on **Recall** to minimize the risk of misclassifying incidents, where timely response is critical.
+
+**Usage** 
+This project addresses a real-world problem faced by support teams. I lead four support teams managing distinct areas of expertise, and this model will be integrated into a chatbot that assists users in raising tickets by directing their queries to the appropriate support queue. The chatbot will:
+
+ - Parse user inputs about issues or questions.
+ - Automatically categorize and assign cases to the correct team, reducing delays in issue resolution.
+   
+Future iterations of the project aim to enhance the system by identifying similar past tickets and sharing their resolutions with support engineers, enabling quicker problem resolution.
+
+**Data and Testing**
+The project leverages two years of historical support case data, with "Short Description" and "Description" fields serving as the primary input features. Each case is tagged with corresponding Parent Tags and Child New Tags columns, which serve as ground truth labels for training and validation. The model's performance will also be tested on unseen data from the last two months, ensuring its effectiveness in real-world scenarios.
+
