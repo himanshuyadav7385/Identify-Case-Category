@@ -39,32 +39,36 @@ Out of the four Logistic regression performed the best. SVM Performed the best i
 
 ![Child Classification results]([Child Results.jpg](https://github.com/himanshuyadav7385/Identify-Case-Category/blob/main/Child%20Results.jpg))
 
-**Logistic regression Score on unseen data:**
-Parent Tag Classification Report:
-                 precision    recall  f1-score   support
+###**Logistic regression Score on unseen data:**
 
-       Incident       0.77      0.70      0.73        86
-Service Request       0.85      0.89      0.87       164
+##### Parent Tag Classification Report
 
-       accuracy                           0.82       250
-      macro avg       0.81      0.79      0.80       250
-   weighted avg       0.82      0.82      0.82       250
+| Class             | Precision | Recall | F1-Score | Support |
+|--------------------|-----------|--------|----------|---------|
+| Incident           | 0.77      | 0.70   | 0.73     | 86      |
+| Service Request    | 0.85      | 0.89   | 0.87     | 164     |
+| **Accuracy**       |           |        | 0.82     | 250     |
+| **Macro Avg**      | 0.81      | 0.79   | 0.80     | 250     |
+| **Weighted Avg**   | 0.82      | 0.82   | 0.82     | 250     |
 
-Parent Tag Accuracy: 0.82
+**Parent Tag Accuracy:** 0.82
 
-Child Tag Classification Report:
-                   precision    recall  f1-score   support
+---
 
-integration issue       0.69      0.64      0.67        56
-   platform issue       0.54      0.47      0.50        30
-      user access       0.79      0.68      0.73        82
-        user help       0.60      0.74      0.67        82
+##### Child Tag Classification Report
 
-         accuracy                           0.67       250
-        macro avg       0.66      0.63      0.64       250
-     weighted avg       0.68      0.67      0.67       250
+| Class               | Precision | Recall | F1-Score | Support |
+|----------------------|-----------|--------|----------|---------|
+| Integration Issue    | 0.69      | 0.64   | 0.67     | 56      |
+| Platform Issue       | 0.54      | 0.47   | 0.50     | 30      |
+| User Access          | 0.79      | 0.68   | 0.73     | 82      |
+| User Help            | 0.60      | 0.74   | 0.67     | 82      |
+| **Accuracy**         |           |        | 0.67     | 250     |
+| **Macro Avg**        | 0.66      | 0.63   | 0.64     | 250     |
+| **Weighted Avg**     | 0.68      | 0.67   | 0.67     | 250     |
 
-Child Tag Accuracy: 0.67
+**Child Tag Accuracy:** 0.67
+
 
 
 
