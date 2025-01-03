@@ -31,7 +31,12 @@ Future iterations of the project aim to enhance the system by identifying simila
 The project leverages two years of historical support case data, with "Short Description" and "Description" fields serving as the primary input features. Each case is tagged with corresponding Parent Tags and Child New Tags columns, which serve as ground truth labels for training and validation. The model's performance will also be tested on unseen data from the last two months, ensuring its effectiveness in real-world scenarios.
 
 **Results**
-Out of the four Logistic regression performed the best. SVM Performed the best in Parent classification followed by Logistic regression , but Logistic regression was better in Child classification. Logistic regression performance was wayt better for Unseen data. Therefore I decided to use the Logistic regression model.
+Among the four models evaluated, **Logistic Regression** emerged as the best-performing model overall. While **SVM** achieved slightly better performance in the parent classification task, Logistic Regression excelled in child classification and demonstrated significantly better performance on unseen data. Based on these results, Logistic Regression was selected as the final model for deployment.
+
+The model's performance on the test set was impressive, achieving accuracy above 90%. However, there is room for improvement, particularly in the child classification task for unseen data. Performance for the "Platform Issue" category was notably lower, indicating the need for further investigation to understand and address this shortfall.
+
+Given the strong performance of the parent classification task, the model is in a deployable state. Moving forward, efforts will focus on improving the child classification results, especially for underperforming categories, to enhance the model’s overall effectiveness.
+
 
 
 
@@ -68,7 +73,6 @@ Out of the four Logistic regression performed the best. SVM Performed the best i
 | **Weighted Avg**     | 0.68      | 0.67   | 0.67     | 250     |
 
 **Child Tag Accuracy:** 0.67
-
 
 
 
