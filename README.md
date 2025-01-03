@@ -32,3 +32,5 @@ The project leverages two years of historical support case data, with "Short Des
 
 **Results**
 Out of the four Logistic regression performed the best. SVM Performed the best in Parent classification followed by Logistic regression , but Logistic regression was better in Child classification. Logistic regression performance was wayt better for Unseen data. Therefore I decided to use the Logistic regression model. 
+
+![Parent Classification results](Parent Results.jpg)
