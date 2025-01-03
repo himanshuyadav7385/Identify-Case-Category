@@ -7,10 +7,10 @@
 **Project overview and goals:** 
 The goal of this project is to build a robust machine learning model to automate the categorization of support cases. This model will analyze the text fields, specifically the "Short Description" and "Description," of a case and assign it to the correct category for routing to the appropriate support queue. The categorization hierarchy consists of two levels:
 
-**Level 1 (Parent Categories):** "Incident" and "Service Request."
-**Level 2 (Child Categories):** Subcategories under each parent category:
-    **Incident:** "Platform Issue" and "Integration Issue."
-    **Service Request:** "User Help" and "User Access."
+- **Level 1 (Parent Categories):** "Incident" and "Service Request."
+- **Level 2 (Child Categories):** Subcategories under each parent category:
+    - **Incident:** "Platform Issue" and "Integration Issue."
+    - **Service Request:** "User Help" and "User Access."
 The model employs a two-step binary classification approach:
 
 1) **Parent Category Classification:** Determines whether a case belongs to "Incident" or "Service Request."
