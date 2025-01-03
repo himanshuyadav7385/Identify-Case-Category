@@ -30,6 +30,10 @@ Future iterations of the project aim to enhance the system by identifying simila
 **Data and Testing**
 The project leverages two years of historical support case data, with "Short Description" and "Description" fields serving as the primary input features. Each case is tagged with corresponding Parent Tags and Child New Tags columns, which serve as ground truth labels for training and validation. The model's performance will also be tested on unseen data from the last two months, ensuring its effectiveness in real-world scenarios.
 
+Training data - https://github.com/himanshuyadav7385/Identify-Case-Category/blob/main/Working_data2.xlsx 
+
+Unseen data - https://github.com/himanshuyadav7385/Identify-Case-Category/blob/main/test_data.xlsx 
+
 **Results**
 Among the four models evaluated, **Logistic Regression** emerged as the best-performing model overall. While **SVM** achieved slightly better performance in the parent classification task, Logistic Regression excelled in child classification and demonstrated significantly better performance on unseen data. Based on these results, Logistic Regression was selected as the final model for deployment.
 
@@ -74,6 +78,10 @@ Given the strong performance of the parent classification task, the model is in 
 
 **Child Tag Accuracy:** 0.67
 
+
+Code and Details of each step is available here - [https://github.com/himanshuyadav7385/Identify-Case-Category/tree/main/Models](https://github.com/himanshuyadav7385/Identify-Case-Category/blob/main/Capstone_Classify_Cases.ipynb)
+
+Trained models can be fount here :- https://github.com/himanshuyadav7385/Identify-Case-Category/tree/main/Models
 
 
 
