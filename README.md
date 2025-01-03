@@ -11,6 +11,7 @@ The goal of this project is to build a robust machine learning model to automate
 - **Level 2 (Child Categories):** Subcategories under each parent category:
     - **Incident:** "Platform Issue" and "Integration Issue."
     - **Service Request:** "User Help" and "User Access."
+      
 The model employs a two-step binary classification approach:
 
 1) **Parent Category Classification:** Determines whether a case belongs to "Incident" or "Service Request."
