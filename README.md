@@ -44,9 +44,9 @@ Given the strong performance of the parent classification task, the model is in 
 
 
 
-![Parent Classification results](Parent%20Results.png)
+![Parent Classification results](Parent%20Results.jpg)
 
-![Child Classification results](Child%20Results.jpg)
+![Child Classification results](Child%20Results.png)
 
 ###**Logistic regression Score on unseen data:**
 
